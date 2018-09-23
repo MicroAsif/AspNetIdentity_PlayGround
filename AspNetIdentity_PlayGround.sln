@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetIdentity_PlayGround", "AspNetIdentity_PlayGround\AspNetIdentity_PlayGround.csproj", "{AA37816C-D82C-415F-B7E4-32552E435F66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA37816C-D82C-415F-B7E4-32552E435F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA37816C-D82C-415F-B7E4-32552E435F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA37816C-D82C-415F-B7E4-32552E435F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA37816C-D82C-415F-B7E4-32552E435F66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7D5CF0A-E011-4384-A208-3DFFC9C01F88}
+	EndGlobalSection
+EndGlobal
