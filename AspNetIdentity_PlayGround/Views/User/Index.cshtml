@@ -1,0 +1,23 @@
+﻿@model IEnumerable<UserList>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>User with Their Roles </h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Name    </th>
+        <th>Email    </th>
+        <th>Roles    </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FullName    </td>
+            <td>@item.Email    </td>
+            <td>@item.Roles    </td>
+        </tr>
+
+    }
+</table>

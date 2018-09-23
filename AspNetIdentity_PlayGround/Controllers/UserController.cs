@@ -7,6 +7,7 @@ using AspNetIdentity_PlayGround.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -29,16 +30,31 @@ namespace AspNetIdentity_PlayGround.Models
 
 
         // GET: /<controller>/
-        public IActionResult Index()
+        public async  Task<IActionResult> Index()
         {
-            return View();
+            List<UserList> userList = new List<UserList>();
+            string rolesName = "";
+            var users = userManager.Users.ToList();
+
+            foreach (var user in users)
+            {
+                var userRoles = await userManager.GetRolesAsync(user);
+                foreach (var userRole in userRoles)
+                {
+                    rolesName = userRole;
+                }
+                userList.Add(new UserList { FullName = user.FullName, Email = user.Email, Roles = rolesName });
+            }
+            return View(userList);
         }
 
         public async Task<IActionResult> CreateRole()
         {
-            if (!roleManager.Roles.Any())
+            string role = "Manager";
+            
+            if (!roleManager.Roles.Any(x=>x.Name == "Manager"))
             {
-                await roleManager.CreateAsync(new RoleModel { Name = "Admin" });
+                await roleManager.CreateAsync(new RoleModel { Name = "Manager" });
                 return RedirectToAction("index", "home");
             }
                 
@@ -47,15 +63,15 @@ namespace AspNetIdentity_PlayGround.Models
 
         public async Task<IActionResult> CreateUser()
         {
-            if (!userManager.Users.Any())
+            if (userManager.Users.Count()>0)
             {
-                var newUser = new UserModel { FullName = "asif rahman", Email = "asif0531@live.com", UserName = "microasif" };
+                var newUser = new UserModel { FullName = "moshiur rahman", Email = "moshiur@live.com", UserName = "moshiur@live.com" };
                
                 var userResult = await userManager.CreateAsync(newUser);
                 if (userResult.Succeeded)
                 {
                    await userManager.AddPasswordAsync(newUser, "Abc123@#");
-                   await userManager.AddToRoleAsync(newUser, "Admin");
+                   await userManager.AddToRoleAsync(newUser, "Manager");
                 }
                 return RedirectToAction("index", "home");
             }

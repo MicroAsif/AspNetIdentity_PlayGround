@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround.csproj",
+      "projectUniqueName": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround.csproj",
       "projectName": "AspNetIdentity_PlayGround",
-      "projectPath": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround.csproj",
+      "projectPath": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround.csproj",
       "packagesPath": "C:\\Users\\SVS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\obj\\",
+      "outputPath": "C:\\Users\\SVS\\OneDrive\\Documents\\GitHub\\AspNetIdentity_PlayGround\\AspNetIdentity_PlayGround\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
