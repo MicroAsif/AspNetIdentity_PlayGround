@@ -86,12 +86,13 @@ namespace AspNetIdentity_PlayGround.Models
 
         public async Task<ActionResult> ChangePassword()
         {
-        string oldPass = "Abc123@#";
+            string oldPass = "Abc123@#";
             string newPass = "Abc123@#";
             var user = await userManager.GetUserAsync(User);
             var changePasswordResult = await userManager.ChangePasswordAsync(user, oldPass, newPass);
             if (!changePasswordResult.Succeeded)
             {
+                ///user.id
                 foreach (var error in changePasswordResult.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
@@ -103,6 +104,16 @@ namespace AspNetIdentity_PlayGround.Models
             await signInManager.RefreshSignInAsync(user);
             ViewBag.StatusMessage = "Your password has been changed.";
             return View();
+        }
+
+        public async Task<IActionResult> Logout(string returnUrl)
+        {
+            await signInManager.SignOutAsync();
+            if (returnUrl != null)
+            {
+                return LocalRedirect(returnUrl);
+            }
+            return RedirectToAction("index", "home");
         }
     }
 }
