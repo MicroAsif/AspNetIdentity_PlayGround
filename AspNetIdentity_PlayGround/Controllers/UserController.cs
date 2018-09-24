@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AspNetIdentity_PlayGround.Data;
 using AspNetIdentity_PlayGround.Models;
@@ -19,13 +20,17 @@ namespace AspNetIdentity_PlayGround.Models
         private readonly ApplicationDbContext context;
         private readonly UserManager<UserModel> userManager;
         private readonly RoleManager<RoleModel> roleManager;
+        private readonly SignInManager<UserModel> signInManager;
+
+      
 
         public UserController(ApplicationDbContext context, UserManager<UserModel> userManager,
-            RoleManager<RoleModel> roleManager)
+            RoleManager<RoleModel> roleManager, SignInManager<UserModel> signInManager)
         {
             this.context = context;
             this.userManager = userManager;
             this.roleManager = roleManager;
+            this.signInManager = signInManager;
         }
 
 
@@ -33,15 +38,16 @@ namespace AspNetIdentity_PlayGround.Models
         public async  Task<IActionResult> Index()
         {
             List<UserList> userList = new List<UserList>();
-            string rolesName = "";
+            
             var users = userManager.Users.ToList();
 
             foreach (var user in users)
             {
+                string rolesName = "";
                 var userRoles = await userManager.GetRolesAsync(user);
                 foreach (var userRole in userRoles)
                 {
-                    rolesName = userRole;
+                    rolesName += userRole;
                 }
                 userList.Add(new UserList { FullName = user.FullName, Email = user.Email, Roles = rolesName });
             }
@@ -76,6 +82,27 @@ namespace AspNetIdentity_PlayGround.Models
                 return RedirectToAction("index", "home");
             }
             return RedirectToAction("index");
+        }
+
+        public async Task<ActionResult> ChangePassword()
+        {
+        string oldPass = "Abc123@#";
+            string newPass = "Abc123@#";
+            var user = await userManager.GetUserAsync(User);
+            var changePasswordResult = await userManager.ChangePasswordAsync(user, oldPass, newPass);
+            if (!changePasswordResult.Succeeded)
+            {
+                foreach (var error in changePasswordResult.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                ViewBag.StatusMessage = "Something wrong.";
+                return View();
+            }
+
+            await signInManager.RefreshSignInAsync(user);
+            ViewBag.StatusMessage = "Your password has been changed.";
+            return View();
         }
     }
 }

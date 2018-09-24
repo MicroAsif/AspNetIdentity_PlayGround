@@ -73,7 +73,6 @@ C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\bin\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.pdb
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\bin\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.Views.dll
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\bin\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.Views.pdb
-C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.csprojAssemblyReference.cache
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.csproj.CoreCompileInputs.cache
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.RazorAssemblyInfo.cache
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.RazorAssemblyInfo.cs
@@ -135,3 +134,5 @@ C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.pdb
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.csproj.CopyComplete
 C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\Razor\Views\User\Index.g.cshtml.cs
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\Razor\Views\User\ChangePassword.g.cshtml.cs
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNetIdentity_PlayGround\obj\Debug\netcoreapp2.1\AspNetIdentity_PlayGround.csprojAssemblyReference.cache

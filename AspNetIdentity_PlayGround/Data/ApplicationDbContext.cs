@@ -10,9 +10,20 @@ namespace AspNetIdentity_PlayGround.Data
     public class ApplicationDbContext : IdentityDbContext<UserModel, RoleModel, string>
     {
 
+       
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+        }
+
+       
+        
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+
+            
+            
+            base.OnModelCreating(builder);
         }
     }
 }

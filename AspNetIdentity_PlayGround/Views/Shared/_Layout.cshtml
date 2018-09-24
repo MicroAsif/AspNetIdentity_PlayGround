@@ -29,6 +29,13 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">AspNetIdentity_PlayGround</a>
             </div>
             <div class="navbar-collapse collapse">
+                @if (User.IsInRole("Admin"))
+                {
+                    <ul class="nav navbar-nav">
+                        <li><a asp-area="" asp-controller="user" asp-action="Index">User</a></li>
+                    </ul>
+
+                }
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
