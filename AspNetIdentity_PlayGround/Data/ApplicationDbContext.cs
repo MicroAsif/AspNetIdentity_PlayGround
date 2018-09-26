@@ -18,11 +18,9 @@ namespace AspNetIdentity_PlayGround.Data
 
        
         
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
-
-            
-            
             base.OnModelCreating(builder);
         }
     }

@@ -89,6 +89,7 @@ namespace AspNetIdentity_PlayGround.Models
             string oldPass = "Abc123@#";
             string newPass = "Abc123@#";
             var user = await userManager.GetUserAsync(User);
+
             var changePasswordResult = await userManager.ChangePasswordAsync(user, oldPass, newPass);
             if (!changePasswordResult.Succeeded)
             {
@@ -100,6 +101,7 @@ namespace AspNetIdentity_PlayGround.Models
                 ViewBag.StatusMessage = "Something wrong.";
                 return View();
             }
+            
 
             await signInManager.RefreshSignInAsync(user);
             ViewBag.StatusMessage = "Your password has been changed.";
