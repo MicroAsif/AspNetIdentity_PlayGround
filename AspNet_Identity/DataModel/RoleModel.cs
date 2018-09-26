@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AspNet_Identity.DataModel
 {
-    class RoleModel
+    public class RoleModel : IdentityRole
     {
+        public string Description { get; set; }
     }
 }
