@@ -1,0 +1,10 @@
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\bin\Debug\netcoreapp2.1\AspNet_Identity.deps.json
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\bin\Debug\netcoreapp2.1\AspNet_Identity.runtimeconfig.json
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\bin\Debug\netcoreapp2.1\AspNet_Identity.runtimeconfig.dev.json
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\bin\Debug\netcoreapp2.1\AspNet_Identity.dll
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\bin\Debug\netcoreapp2.1\AspNet_Identity.pdb
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\obj\Debug\netcoreapp2.1\AspNet_Identity.csproj.CoreCompileInputs.cache
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\obj\Debug\netcoreapp2.1\AspNet_Identity.AssemblyInfoInputs.cache
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\obj\Debug\netcoreapp2.1\AspNet_Identity.AssemblyInfo.cs
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\obj\Debug\netcoreapp2.1\AspNet_Identity.dll
+C:\Users\SVS\OneDrive\Documents\GitHub\AspNetIdentity_PlayGround\AspNet_Identity\obj\Debug\netcoreapp2.1\AspNet_Identity.pdb
